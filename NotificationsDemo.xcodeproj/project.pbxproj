@@ -12,6 +12,8 @@
 		7B6E73C61E5F565100772328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E73C41E5F565100772328 /* Main.storyboard */; };
 		7B6E73C81E5F565100772328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E73C71E5F565100772328 /* Assets.xcassets */; };
 		7B6E73CB1E5F565100772328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E73C91E5F565100772328 /* LaunchScreen.storyboard */; };
+		7B6E73D31E5F5B1300772328 /* gong.aif in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E73D21E5F5B1300772328 /* gong.aif */; };
+		7B6E73D51E5F5B6700772328 /* treehouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7B6E73D41E5F5B6700772328 /* treehouse.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7B6E73C71E5F565100772328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B6E73CA1E5F565100772328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B6E73CC1E5F565100772328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B6E73D21E5F5B1300772328 /* gong.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = gong.aif; sourceTree = "<group>"; };
+		7B6E73D41E5F5B6700772328 /* treehouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = treehouse.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				7B6E73C01E5F565100772328 /* AppDelegate.swift */,
 				7B6E73C21E5F565100772328 /* ViewController.swift */,
+				7B6E73D21E5F5B1300772328 /* gong.aif */,
+				7B6E73D41E5F5B6700772328 /* treehouse.jpg */,
 				7B6E73C41E5F565100772328 /* Main.storyboard */,
 				7B6E73C71E5F565100772328 /* Assets.xcassets */,
 				7B6E73C91E5F565100772328 /* LaunchScreen.storyboard */,
@@ -125,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B6E73CB1E5F565100772328 /* LaunchScreen.storyboard in Resources */,
+				7B6E73D51E5F5B6700772328 /* treehouse.jpg in Resources */,
+				7B6E73D31E5F5B1300772328 /* gong.aif in Resources */,
 				7B6E73C81E5F565100772328 /* Assets.xcassets in Resources */,
 				7B6E73C61E5F565100772328 /* Main.storyboard in Resources */,
 			);
