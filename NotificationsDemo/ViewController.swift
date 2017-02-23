@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         content.body = "Notification after 10 seconds - Your alert is ready!"
         content.badge = 1
         content.sound = UNNotificationSound(named: "gong.aif")
+        content.userInfo = ["id": 42]
         
         
         let imageURL = Bundle.main.url(forResource: "treehouse", withExtension: "jpg")
@@ -32,8 +33,9 @@ class ViewController: UIViewController {
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10.0, repeats: false)
         let request = UNNotificationRequest(identifier: "10.second.notification", content: content, trigger: trigger)
-        
+        let notificationCenter = UNUserNotificationCenter.current()
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+        notificationCenter.delegate = self
     }
 
    
@@ -41,4 +43,27 @@ class ViewController: UIViewController {
 
 
 }
+
+extension ViewController: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print(response.notification.request.content.userInfo)
+        completionHandler()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+       // print("Silently handle notification")
+        completionHandler([.alert, .sound])
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
